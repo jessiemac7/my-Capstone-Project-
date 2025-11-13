@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+    background-image: url('images/reservation\ 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.banner{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    padding-bottom: 10rem;
+}
+.tab-container{
+    display:inline
+}
+.banner h2{
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-size: 3.5rem;
+}
+.tab-content{
+    height: 50%;
+}
+.tab-content h3{
+    text-align: center;
+    color: rgb(248, 151, 54);
+    padding: 0 0 .8rem 0;
+    font-size: 2rem;
+    font-weight: 50;
+    font-style: italic;
+}
+.font-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+#hour{
+    margin-left: 2.2rem;
+    padding: 10px 58px;
+}
+#day{
+    padding: 10px 58px;
+}
+form select, form input{
+    display: inline-block;
+    margin: 25px 35px;
+    padding: 13px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    border: groove;
+    border-bottom: 1px solid beige;
+    font-weight: 500;
+    
+}
+form input[type = submit]{
+    color: white;
+    background-color: rgb(248, 151, 54);
+    cursor: pointer;
+    padding: 7px 62px;
+
+}
+
+@media(max-width:99px)  {
+    .tab-container{
+         grid-template-columns: 100%;
+    }
+
+}
